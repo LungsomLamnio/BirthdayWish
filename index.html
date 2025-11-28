@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday, Twijilang! 🎂</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(
+          135deg,
+          #f0f8ff,
+          #e6e6fa
+        ); /* Light, gentle background */
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        text-align: center;
+        overflow-x: hidden; /* Prevent horizontal scroll on small devices */
+      }
+
+      .container {
+        max-width: 800px;
+        width: 95%; /* Adjust width for better mobile fit */
+        padding: 20px 15px; /* Smaller padding for mobile */
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1.5s ease-out;
+        margin: 20px auto; /* Add some vertical margin for spacing */
+        box-sizing: border-box; /* Include padding in width */
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      header {
+        margin-bottom: 25px;
+      }
+
+      .decorative-text {
+        font-family: "Dancing Script", cursive;
+        color: #8b0000; /* Deep Red/Maroon */
+        margin: 0;
+        line-height: 1.2;
+      }
+
+      h1.decorative-text {
+        font-size: 2.8em; /* Smaller for mobile */
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      h2.decorative-text {
+        font-size: 1.5em; /* Smaller for mobile */
+        color: #555;
+        font-weight: 300;
+      }
+
+      .birthday-photo {
+        width: 180px; /* Fixed size for circular image */
+        height: 180px;
+        border-radius: 50%; /* Makes the image circular */
+        object-fit: cover; /* Ensures image covers the area without distortion */
+        border: 5px solid #ff6347; /* Tomato Red border */
+        margin: 20px auto 30px auto; /* Centered with spacing */
+        display: block; /* To center with margin auto */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      }
+
+      .card {
+        padding: 20px; /* Smaller padding for mobile */
+        background-color: #fffaf0; /* Light Cream */
+        border-radius: 10px;
+        border: 1px solid #ffebcd; /* Border color */
+      }
+
+      .greeting-text {
+        font-style: italic;
+        color: #6a5acd; /* Medium Slate Blue */
+        font-weight: 600;
+        margin-bottom: 15px; /* Smaller margin for mobile */
+        font-size: 0.95em; /* Slightly smaller for mobile */
+      }
+
+      .name-header {
+        font-size: 2em; /* Smaller for mobile */
+        color: #008080; /* Teal/Turquoise */
+        margin-top: 0;
+        margin-bottom: 15px;
+        animation: pulse 2s infinite alternate;
+      }
+
+      @keyframes pulse {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.03);
+        }
+      }
+
+      #surpriseBtn {
+        background-color: #ff6347; /* Tomato Red */
+        color: white;
+        border: none;
+        padding: 10px 20px; /* Smaller padding for mobile */
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em; /* Adjusted for mobile */
+        font-weight: 600;
+        margin: 15px 0; /* Adjusted margin for mobile */
+        transition: background-color 0.3s, transform 0.1s;
+      }
+
+      #surpriseBtn:hover {
+        background-color: #e5533d;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .hidden {
+        display: none;
+        padding-top: 15px;
+        border-top: 1px dashed #ccc;
+        margin-top: 20px;
+      }
+
+      .surprise-text {
+        font-size: 1.1em; /* Slightly smaller for mobile */
+        color: #3cb371; /* Medium Sea Green */
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 15px;
+      }
+
+      .signature {
+        font-size: 0.85em; /* Slightly smaller for mobile */
+        font-style: italic;
+        color: #777;
+      }
+
+      footer {
+        margin-top: 25px; /* Adjusted margin for mobile */
+        font-size: 0.75em; /* Smaller for mobile */
+        color: #999;
+      }
+
+      /* Media queries for larger screens (tablets and desktops) */
+      @media (min-width: 600px) {
+        .container {
+          padding: 40px 30px;
+          width: 90%;
+        }
+
+        h1.decorative-text {
+          font-size: 3.5em;
+        }
+
+        h2.decorative-text {
+          font-size: 1.8em;
+        }
+
+        .name-header {
+          font-size: 2.5em;
+        }
+
+        .greeting-text {
+          font-size: 1em;
+        }
+
+        #surpriseBtn {
+          padding: 12px 25px;
+          font-size: 1.1em;
+        }
+
+        .surprise-text {
+          font-size: 1.2em;
+        }
+
+        .signature {
+          font-size: 0.9em;
+        }
+
+        footer {
+          font-size: 0.8em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="decorative-text">A Birthday Blessing</h1>
+        <h2 class="decorative-text">For Our Brother in Christ</h2>
+      </header>
+
+      <img
+        src="/Teju.jpeg"
+        alt="Birthday Boy Twijilang Tripura"
+        class="birthday-photo"
+      />
+
+      <main>
+        <div class="card">
+          <p class="greeting-text">
+            "This is the day the Lord has made; we will rejoice and be glad in
+            it." - Psalm 118:24 📖
+          </p>
+
+          <h3 class="name-header">Happy Birthday,Twijilang Tripura!</h3>
+
+          <p>
+            May your life continue to be a shining testimony of God's grace and
+            love. We pray for abundant blessings, joy, and peace in this new
+            year of your life.
+          </p>
+
+          <button id="surpriseBtn">Click for a Special Prayer & Wish 🙏</button>
+
+          <div id="surpriseMessage" class="hidden">
+            <p class="surprise-text">
+              "Twijilang, may God grant you the desires of your heart and make
+              all your plans succeed. We celebrate the wonderful person you are!
+              Stay blessed and continue to walk in faith and wisdom."
+            </p>
+            <p class="signature">- Your Friends/Family in Christ</p>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 A Gift of Love & Joy ✨</p>
+      </footer>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        const button = document.getElementById("surpriseBtn");
+        const message = document.getElementById("surpriseMessage");
+
+        button.addEventListener("click", () => {
+          // Toggle the 'hidden' class to show/hide the message
+          message.classList.toggle("hidden");
+
+          // Change the button text based on the state
+          if (message.classList.contains("hidden")) {
+            button.textContent = "Click for a Special Prayer & Wish 🙏";
+          } else {
+            button.textContent = "Message Revealed! 🎉";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
